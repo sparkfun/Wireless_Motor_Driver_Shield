@@ -18556,13 +18556,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LED4" library="SparkFun-LED" deviceset="LED" device="0603" value="Blue"/>
 <part name="U1" library="SparkFun-Boards" deviceset="ARDUINO_R3_SHIELD" device="NOLABELS" value="ARDUINO"/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP0" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP4" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="JP0" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D0"/>
+<part name="JP1" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D1"/>
+<part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D2"/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D3"/>
+<part name="JP4" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D4"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP5" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="JP5" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D5"/>
 <part name="U3" library="SparkFun" deviceset="TB6621FNG" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
@@ -18570,26 +18570,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="JP6" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP7" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP8" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP10" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="JP6" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D6"/>
+<part name="JP7" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D7"/>
+<part name="JP8" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D8"/>
+<part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D9"/>
+<part name="JP10" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D10"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP11" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP12" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP13" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP14" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP15" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP16" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP17" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP18" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="JP19" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="JP11" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D11"/>
+<part name="JP12" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D12"/>
+<part name="JP13" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D13"/>
+<part name="JP14" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="A0"/>
+<part name="JP15" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="A1"/>
+<part name="JP16" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="A2"/>
+<part name="JP17" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="A3"/>
+<part name="JP18" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="A4"/>
+<part name="JP19" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="A5"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="LED5" library="SparkFun-LED" deviceset="LED" device="0603" value="YELLOW"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="330OHM1/10W1%(0603)" device="" value="330"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
-<part name="S4" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD"/>
+<part name="S4" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD" value="RESET"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD" value="PTCSMD"/>
 <part name="F2" library="SparkFun-PowerIC" deviceset="PTC" device="0603"/>
@@ -19606,9 +19606,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,12.0227,113.225,JP0,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>

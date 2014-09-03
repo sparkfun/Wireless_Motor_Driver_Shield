@@ -26796,6 +26796,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NC_BY_TRACE" device=""/>
 <part name="U$1" library="SparkFun-Aesthetics" deviceset="SFE_LUDUS" device=""/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2COP"/>
+<part name="LOGO4" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH" value="SFE_LOGO_NAME_FLAME.1_INCH"/>
 </parts>
 <sheets>
 <sheet>
@@ -26908,6 +26909,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SJ4" gate="G$1" x="195.58" y="114.3" rot="R180"/>
 <instance part="U$1" gate="G$1" x="257.191559375" y="32.335265625" rot="R90"/>
 <instance part="LOGO3" gate="G$1" x="264.16" y="27.94"/>
+<instance part="LOGO4" gate="G$1" x="284.48" y="-17.78"/>
 </instances>
 <busses>
 </busses>
