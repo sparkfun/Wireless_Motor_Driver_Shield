@@ -953,6 +953,22 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <rectangle x1="3.49" y1="6.8" x2="4.13" y2="7.65" layer="51"/>
 <smd name="4" x="3.81" y="7.225" dx="1.25" dy="3" layer="1" rot="R180"/>
 </package>
+<package name="1X04-1.5MM_JST">
+<pad name="4" x="4.5" y="0" drill="0.7"/>
+<pad name="3" x="3" y="0" drill="0.7"/>
+<pad name="2" x="1.5" y="0" drill="0.7"/>
+<pad name="1" x="0" y="0" drill="0.7"/>
+<text x="-0.508" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-1.5" y1="2.2" x2="6" y2="2.2" width="0.3048" layer="21"/>
+<wire x1="6" y1="2.2" x2="6" y2="-1.5" width="0.3048" layer="21"/>
+<wire x1="6" y1="-1.5" x2="4.5" y2="-1.5" width="0.3048" layer="21"/>
+<wire x1="4.5" y1="-1.5" x2="4.5" y2="-1" width="0.3048" layer="21"/>
+<wire x1="4.5" y1="-1" x2="0" y2="-1" width="0.3048" layer="21"/>
+<wire x1="0" y1="-1" x2="0" y2="-1.5" width="0.3048" layer="21"/>
+<wire x1="0" y1="-1.5" x2="-1.5" y2="-1.5" width="0.3048" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="2.2" width="0.3048" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M03">
@@ -1375,7 +1391,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08511"/>
+<attribute name="VALUE" value="1X04_SMD_STRAIGHT_COMBO"/>
+</technology>
 </technologies>
 </device>
 <device name="SMD_LONG" package="1X04-SMD_LONG">
@@ -1401,6 +1420,17 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </technologies>
 </device>
 <device name="SMD_RA_FEMALE" package="1X04_SMD_RA_FEMALE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JST" package="1X04-1.5MM_JST">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -25921,7 +25951,10 @@ SMT- SWCH-08247</description>
 <connect gate="S" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-08247"/>
+<attribute name="VALUE" value="TAC_SWITCHSMD"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26116,8 +26149,8 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TB6621FNG" prefix="U" uservalue="yes">
-<description>Toshiba 1A dual motor driver&lt;br&gt;
+<deviceset name="TB6612FNG">
+<description>Toshiba 1A dual motor driver
 IC-09363</description>
 <gates>
 <gate name="G$1" symbol="TB6612FNG" x="0" y="0"/>
@@ -26153,7 +26186,7 @@ IC-09363</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09363"/>
-<attribute name="VALUE" value="TB6612FNG" constant="no"/>
+<attribute name="VALUE" value="TB6612FNG"/>
 </technology>
 </technologies>
 </device>
@@ -26758,7 +26791,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP4" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D4"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="D5"/>
-<part name="U3" library="SparkFun-PowerIC" deviceset="TB6621FNG" device=""/>
+<part name="U3" library="SparkFun-PowerIC" deviceset="TB6612FNG" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF-20V-10%(TANT)" device="" value="10uf , 20V"/>
@@ -26801,6 +26834,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$1" library="SparkFun-Aesthetics" deviceset="SFE_LUDUS" device=""/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2COP"/>
 <part name="LOGO4" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH" value="SFE_LOGO_NAME_FLAME.1_INCH"/>
+<part name="JP23" library="SparkFun-Connectors" deviceset="M04" device="SMD_STRAIGHT_COMBO"/>
 </parts>
 <sheets>
 <sheet>
@@ -26808,7 +26842,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="223.52" y="129.54" size="2.54" layer="94">Arduino Shield</text>
 <text x="177.8" y="38.1" size="2.54" layer="94">H-Bridge Driver</text>
 <text x="124.714" y="87.63" size="2.54" layer="94">I2C Header</text>
-<text x="121.92" y="162.56" size="2.54" layer="94">Motor Outputs</text>
+<text x="139.7" y="129.54" size="2.54" layer="94">Motor Outputs</text>
 <wire x1="165.1" y1="185.42" x2="165.1" y2="127" width="0.2032" layer="94" style="longdash"/>
 <wire x1="165.1" y1="127" x2="248.92" y2="127" width="0.2032" layer="94" style="longdash"/>
 <wire x1="165.1" y1="127" x2="116.84" y2="127" width="0.2032" layer="94" style="longdash"/>
@@ -26914,6 +26948,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$1" gate="G$1" x="257.191559375" y="32.335265625" rot="R90"/>
 <instance part="LOGO3" gate="G$1" x="264.16" y="27.94"/>
 <instance part="LOGO4" gate="G$1" x="284.48" y="-17.78"/>
+<instance part="JP23" gate="G$1" x="129.54" y="157.48"/>
 </instances>
 <busses>
 </busses>
@@ -27332,8 +27367,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="4"/>
-<wire x1="134.62" y1="177.8" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
-<label x="142.24" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="134.62" y1="177.8" x2="137.16" y2="177.8" width="0.1524" layer="91"/>
+<label x="147.32" y="177.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP23" gate="G$1" pin="4"/>
+<wire x1="137.16" y1="177.8" x2="147.32" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="162.56" x2="137.16" y2="177.8" width="0.1524" layer="91"/>
+<junction x="137.16" y="177.8"/>
 </segment>
 </net>
 <net name="AOUT2" class="0">
@@ -27360,8 +27400,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="3"/>
-<wire x1="134.62" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
-<label x="142.24" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="134.62" y1="175.26" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
+<label x="147.32" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="139.7" y1="175.26" x2="147.32" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="175.26" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
+<junction x="139.7" y="175.26"/>
+<pinref part="JP23" gate="G$1" pin="3"/>
+<wire x1="139.7" y1="160.02" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BOUT2" class="0">
@@ -27388,8 +27433,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="170.18" x2="142.24" y2="170.18" width="0.1524" layer="91"/>
-<label x="142.24" y="170.18" size="1.27" layer="95" xref="yes"/>
+<wire x1="134.62" y1="170.18" x2="144.78" y2="170.18" width="0.1524" layer="91"/>
+<label x="147.32" y="170.18" size="1.27" layer="95" xref="yes"/>
+<wire x1="144.78" y1="170.18" x2="147.32" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="170.18" x2="144.78" y2="154.94" width="0.1524" layer="91"/>
+<junction x="144.78" y="170.18"/>
+<pinref part="JP23" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="154.94" x2="134.62" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BOUT1" class="0">
@@ -27417,7 +27467,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="JP21" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="172.72" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
-<label x="142.24" y="172.72" size="1.27" layer="95" xref="yes"/>
+<label x="147.32" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP23" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="172.72" x2="147.32" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="157.48" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
+<junction x="142.24" y="172.72"/>
 </segment>
 </net>
 <net name="STBY" class="0">
