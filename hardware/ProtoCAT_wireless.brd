@@ -16,7 +16,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -35,7 +35,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
@@ -64,7 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -190,7 +190,7 @@
 <text x="49.53" y="4.191" size="1.016" layer="21" ratio="15" rot="R90" align="center-left">A3</text>
 <text x="52.197" y="4.064" size="1.016" layer="21" ratio="15" rot="R90" align="center-left">A4</text>
 <text x="54.61" y="3.937" size="1.016" layer="21" ratio="15" rot="R90" align="center-left">A5</text>
-<text x="55.626" y="15.875" size="1.016" layer="21" ratio="15" rot="R180">Analog In</text>
+<text x="55.88" y="14.732" size="1.016" layer="21" ratio="15" align="bottom-right">Analog In</text>
 <text x="17.78" y="49.403" size="0.8128" layer="21" ratio="15" rot="R270" align="center-left">GND</text>
 <text x="20.32" y="49.403" size="0.8128" layer="21" ratio="15" rot="R270" align="center-left">13</text>
 <text x="22.86" y="49.403" size="0.8128" layer="21" ratio="15" rot="R270" align="center-left">12</text>
@@ -776,6 +776,8 @@
 <text x="20.32" y="16.764" size="0.8128" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">RSSI</text>
 <text x="25.4" y="28.956" size="0.8128" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">GND</text>
 <text x="25.4" y="16.764" size="0.8128" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">GND</text>
+<text x="43.18" y="14.732" size="0.8128" layer="21" font="vector" ratio="15" align="bottom-center">SW_SER</text>
+<wire x1="40.64" y1="14.351" x2="45.72" y2="14.351" width="0.2032" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
