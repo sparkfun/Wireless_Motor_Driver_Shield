@@ -11,6 +11,9 @@ This board extends the ludusProtoShield with an XBee header for adding wireless
 capability to your Arduino projects. A switch for SW_Serial ties the TX/RX lines to 
 pins A0 and A1 on the Arduino board. 
 
+This shield is a perfect addition to building up a simiple robotics platform with an
+Arduino board.
+
 If connected to your Arduino, the switch must be set to SW_Serial in order to program your board. 
 
 --------
