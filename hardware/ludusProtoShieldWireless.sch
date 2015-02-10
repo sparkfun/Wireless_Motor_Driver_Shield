@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -33255,7 +33255,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R11" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1k"/>
 <part name="F3" library="SparkFun-PowerIC" deviceset="PTC" device="SMD" value="PTCSMD"/>
-<part name="SJ5" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO"/>
+<part name="SJ5" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO" value=""/>
 <part name="JP23" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 <part name="JP24" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 <part name="U$1" library="SparkFun-Aesthetics" deviceset="SFE_LUDUS" device="SFE_LUDUS-M" value="SFE_LUDUSSFE_LUDUS-M"/>
@@ -33268,6 +33268,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -33403,11 +33405,11 @@ Output Current: 1.2A (ave) / 3.2A (peak)</text>
 <instance part="SJ4" gate="G$1" x="398.78" y="142.24" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="330.2" y="0"/>
-<instance part="GND4" gate="1" x="45.72" y="142.24"/>
+<instance part="GND4" gate="1" x="25.4" y="139.7"/>
 <instance part="R11" gate="G$1" x="25.4" y="165.1" rot="R90"/>
 <instance part="F3" gate="G$1" x="294.64" y="256.54"/>
-<instance part="SJ5" gate="1" x="30.48" y="152.4"/>
-<instance part="JP23" gate="G$1" x="71.12" y="165.1"/>
+<instance part="SJ5" gate="1" x="25.4" y="149.86" rot="R270"/>
+<instance part="JP23" gate="G$1" x="71.12" y="170.18"/>
 <instance part="JP24" gate="G$1" x="71.12" y="147.32"/>
 <instance part="U$1" gate="G$1" x="411.48" y="25.4"/>
 <instance part="S1" gate="G$1" x="175.26" y="259.08"/>
@@ -33415,6 +33417,8 @@ Output Current: 1.2A (ave) / 3.2A (peak)</text>
 <instance part="GND8" gate="1" x="297.18" y="129.54"/>
 <instance part="SUPPLY1" gate="G$1" x="271.78" y="269.24"/>
 <instance part="SUPPLY2" gate="G$1" x="276.86" y="269.24"/>
+<instance part="GND9" gate="1" x="81.28" y="137.16"/>
+<instance part="GND10" gate="1" x="81.28" y="162.56"/>
 </instances>
 <busses>
 </busses>
@@ -33590,20 +33594,21 @@ Output Current: 1.2A (ave) / 3.2A (peak)</text>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="35.56" y1="152.4" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="152.4" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="144.78" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="SJ5" gate="1" pin="2"/>
 </segment>
 <segment>
 <pinref part="JP23" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="162.56" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
-<label x="83.82" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="78.74" y1="167.64" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="81.28" y1="165.1" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP24" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
-<label x="83.82" y="144.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="78.74" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="81.28" y1="139.7" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D12" class="0">
@@ -34335,8 +34340,8 @@ Output Current: 1.2A (ave) / 3.2A (peak)</text>
 </segment>
 <segment>
 <pinref part="JP23" gate="G$1" pin="3"/>
-<wire x1="78.74" y1="167.64" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
-<label x="83.82" y="167.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="78.74" y1="172.72" x2="83.82" y2="172.72" width="0.1524" layer="91"/>
+<label x="83.82" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -34424,7 +34429,7 @@ Output Current: 1.2A (ave) / 3.2A (peak)</text>
 <wire x1="25.4" y1="157.48" x2="22.86" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="160.02" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="SJ5" gate="1" pin="1"/>
-<wire x1="25.4" y1="152.4" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="154.94" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
 <junction x="25.4" y="157.48"/>
 </segment>
 </net>
@@ -34586,8 +34591,8 @@ Output Current: 1.2A (ave) / 3.2A (peak)</text>
 </segment>
 <segment>
 <pinref part="JP23" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="165.1" x2="83.82" y2="165.1" width="0.1524" layer="91"/>
-<label x="83.82" y="165.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="78.74" y1="170.18" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
+<label x="83.82" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DIO0" class="0">

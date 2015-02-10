@@ -5386,7 +5386,7 @@ design rules under a new name.</description>
 <element name="F3" library="SparkFun-PowerIC" package="PTC-1206" value="PTCSMD" x="25.4" y="8.255" rot="R180">
 <attribute name="PROD_ID" value="RES-11150" x="25.4" y="8.255" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="SJ5" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="17.78" y="7.62"/>
+<element name="SJ5" library="SparkFun-Retired" package="SJ_2S-NO" value="" x="17.78" y="7.62"/>
 <element name="JP23" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="25.4" y="15.24" rot="R180"/>
 <element name="JP24" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="25.4" y="30.48" rot="R180"/>
 <element name="U$1" library="SparkFun-Aesthetics" package="SFE_LUDUS-M" value="SFE_LUDUSSFE_LUDUS-M" x="41.783" y="27.178" rot="SMR270"/>
