@@ -34909,6 +34909,19 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,88.9,109.22,MOD1,RTS,,,,"/>
+<approved hash="104,1,48.26,119.38,MOD1,VDD,FUSED_3.3V,,,"/>
+<approved hash="113,1,288.883,104.335,JP21,,,,,"/>
+<approved hash="113,1,288.883,86.5547,JP22,,,,,"/>
+<approved hash="113,1,286.343,142.435,JP20,,,,,"/>
+<approved hash="113,1,343.748,142.24,SJ3,,,,,"/>
+<approved hash="113,1,399.628,142.24,SJ4,,,,,"/>
+<approved hash="113,1,75.5227,166.565,JP23,,,,,"/>
+<approved hash="113,1,75.5227,148.785,JP24,,,,,"/>
+<approved hash="113,1,207.01,232.418,S1,,,,,"/>
+<approved hash="113,1,209.55,255.278,S2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
