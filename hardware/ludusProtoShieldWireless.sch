@@ -34448,6 +34448,11 @@ Output Current: 1.2A (ave) / 3.2A (peak)</text>
 <junction x="40.64" y="190.5"/>
 <label x="30.48" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="12.7" y1="38.1" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
+<label x="12.7" y="30.48" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="LED7" gate="G$1" pin="C"/>
+</segment>
 </net>
 <net name="DIN" class="0">
 <segment>
@@ -34617,13 +34622,6 @@ Output Current: 1.2A (ave) / 3.2A (peak)</text>
 <pinref part="JP24" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="147.32" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
 <label x="83.82" y="147.32" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="D1" class="0">
-<segment>
-<wire x1="12.7" y1="38.1" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
-<label x="12.7" y="30.48" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="LED7" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
