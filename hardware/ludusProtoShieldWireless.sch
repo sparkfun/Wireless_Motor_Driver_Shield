@@ -33470,7 +33470,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="114.3" y1="203.2" x2="114.3" y2="279.4" width="0.2032" layer="97" style="longdash"/>
 <wire x1="259.08" y1="203.2" x2="259.08" y2="158.75" width="0.2032" layer="97" style="longdash"/>
 <text x="337.82" y="7.62" size="2.54" layer="94">B. Huang</text>
-<text x="421.64" y="7.62" size="2.54" layer="94">v10</text>
+<text x="421.64" y="7.62" size="2.54" layer="94">v11</text>
 <wire x1="259.08" y1="158.75" x2="259.08" y2="121.92" width="0.2032" layer="97" style="longdash"/>
 <wire x1="259.08" y1="121.92" x2="259.08" y2="0" width="0.2032" layer="97" style="longdash"/>
 <text x="405.13" y="124.206" size="2.54" layer="94">I2C Header</text>
@@ -33480,7 +33480,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <text x="81.534" y="6.35" size="2.54" layer="94">XBee Breakout</text>
 <wire x1="259.08" y1="158.75" x2="431.8" y2="158.75" width="0.1524" layer="97" style="longdash"/>
 <text x="210.82" y="210.82" size="2.54" layer="94">Power Rail Select Switches</text>
-<text x="353.06" y="48.26" size="1.27" layer="97">Max Input Voltage:15V
+<text x="355.6" y="55.88" size="1.27" layer="97">Max Input Voltage:15V
 Output Current: 1.2A (ave) / 3.2A (peak)</text>
 <text x="12.7" y="142.24" size="1.27" layer="97">RESET Jumper provides easy access 
 to reset the XBEE Radio Module using 
@@ -33492,6 +33492,12 @@ comparable.</text>
 <wire x1="177.8" y1="5.08" x2="121.92" y2="5.08" width="0.2032" layer="97" style="longdash"/>
 <wire x1="121.92" y1="5.08" x2="121.92" y2="48.26" width="0.2032" layer="97" style="longdash"/>
 <text x="152.654" y="6.35" size="2.54" layer="94">QC Test Points</text>
+<text x="355.6" y="40.64" size="1.27" layer="97">Dual Motor Driver:
+Motor A                   Motor B
+------------------------------------------------
+  PWM (pin 3)           PWM (pin 6) 
+  AIN1 (pin 4)            BIN1 (pin 7)
+  AIN2 (pin 5)            BIN2 (pin 8)</text>
 </plain>
 <instances>
 <instance part="JP21" gate="G$1" x="287.02" y="101.6"/>
@@ -33900,19 +33906,19 @@ comparable.</text>
 <label x="383.54" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="*D6"/>
-<wire x1="375.92" y1="215.9" x2="378.46" y2="215.9" width="0.1524" layer="91"/>
-<label x="378.46" y="215.9" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP6" gate="G$1" pin="3"/>
-<wire x1="142.24" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
-<label x="154.94" y="86.36" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="TP3" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="30.48" x2="134.62" y2="30.48" width="0.1524" layer="91"/>
 <label x="134.62" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="375.92" y1="223.52" x2="378.46" y2="223.52" width="0.1524" layer="91"/>
+<label x="378.46" y="223.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="*D3"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="3"/>
+<wire x1="142.24" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
+<label x="154.94" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWMB" class="0">
@@ -33922,19 +33928,19 @@ comparable.</text>
 <label x="383.54" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="*D9"/>
-<wire x1="375.92" y1="208.28" x2="378.46" y2="208.28" width="0.1524" layer="91"/>
-<label x="378.46" y="208.28" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP9" gate="G$1" pin="3"/>
-<wire x1="180.34" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
-<label x="193.04" y="149.86" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="TP6" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="15.24" x2="134.62" y2="15.24" width="0.1524" layer="91"/>
 <label x="134.62" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="*D6"/>
+<wire x1="375.92" y1="215.9" x2="378.46" y2="215.9" width="0.1524" layer="91"/>
+<label x="378.46" y="215.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="3"/>
+<wire x1="142.24" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
+<label x="154.94" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -34296,18 +34302,6 @@ comparable.</text>
 <pinref part="TP12" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="15.24" x2="160.02" y2="15.24" width="0.1524" layer="91"/>
 <label x="160.02" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="D3" class="0">
-<segment>
-<wire x1="375.92" y1="223.52" x2="378.46" y2="223.52" width="0.1524" layer="91"/>
-<label x="378.46" y="223.52" size="1.27" layer="95" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="*D3"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="142.24" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
-<label x="154.94" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A3" class="0">
@@ -34903,6 +34897,18 @@ comparable.</text>
 <pinref part="F3" gate="G$1" pin="1"/>
 <pinref part="U2" gate="G$1" pin="3.3V"/>
 <wire x1="347.98" y1="203.2" x2="350.52" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D9" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="*D9"/>
+<wire x1="375.92" y1="208.28" x2="378.46" y2="208.28" width="0.1524" layer="91"/>
+<label x="378.46" y="208.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="3"/>
+<wire x1="180.34" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
+<label x="193.04" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
