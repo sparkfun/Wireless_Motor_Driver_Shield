@@ -33406,7 +33406,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2_INCH" value="SFE_LOGO_FLAME.2_INCH"/>
 <part name="LOGO4" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH" value="SFE_LOGO_NAME_FLAME.1_INCH"/>
 <part name="JP22" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
-<part name="LED7" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="Red"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="Red"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="Green"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="1K"/>
@@ -33584,7 +33584,7 @@ Motor A                   Motor B
 <instance part="LOGO3" gate="G$1" x="233.172" y="12.7"/>
 <instance part="LOGO4" gate="G$1" x="200.66" y="0"/>
 <instance part="JP22" gate="G$1" x="287.02" y="83.82"/>
-<instance part="LED7" gate="G$1" x="12.7" y="43.18"/>
+<instance part="D1" gate="G$1" x="12.7" y="43.18"/>
 <instance part="D2" gate="G$1" x="22.86" y="43.18"/>
 <instance part="R6" gate="G$1" x="12.7" y="53.34" rot="R270"/>
 <instance part="R7" gate="G$1" x="22.86" y="53.34" rot="MR270"/>
@@ -34567,7 +34567,7 @@ Motor A                   Motor B
 <net name="N$22" class="0">
 <segment>
 <wire x1="12.7" y1="48.26" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="LED7" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -34702,7 +34702,7 @@ Motor A                   Motor B
 <segment>
 <wire x1="12.7" y1="38.1" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
 <label x="12.7" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="LED7" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="DIN" class="0">
@@ -34920,8 +34920,6 @@ Motor A                   Motor B
 <approved hash="113,1,286.343,142.435,JP20,,,,,"/>
 <approved hash="113,1,343.748,142.24,SJ3,,,,,"/>
 <approved hash="113,1,399.628,142.24,SJ4,,,,,"/>
-<approved hash="113,1,75.5227,166.565,JP23,,,,,"/>
-<approved hash="113,1,75.5227,148.785,JP24,,,,,"/>
 </errors>
 </schematic>
 </drawing>
