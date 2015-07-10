@@ -17,7 +17,7 @@ Arduino board.
 If connected to your Arduino, the switch must be set to SW_Serial in order to program your board. 
 
 --------
-ludus is the mascot of the SparkFun Education team. It is a highly intelligent, 8-legged (tenacled) octopus.
+ludus is the mascot of the SparkFun Education team. It is a highly intelligent octopus.
 
                    _,--._
                       ,'      `.
