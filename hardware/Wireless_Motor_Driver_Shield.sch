@@ -24887,7 +24887,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LOGO5" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2COP" value="SFE_LOGO_FLAME.2COP"/>
 <part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5" value=""/>
 <part name="TP2" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5" value=""/>
 <part name="TP3" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5" value=""/>
@@ -24911,6 +24910,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL" device="DMG2307L" value="DMG2307L"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="FID3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2" value="FIDUCIAL1X2"/>
+<part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2" value="FIDUCIAL1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -25064,7 +25065,6 @@ Motor A                   Motor B
 <instance part="GND8" gate="1" x="350.52" y="132.08"/>
 <instance part="GND9" gate="1" x="81.28" y="152.4"/>
 <instance part="GND10" gate="1" x="81.28" y="177.8"/>
-<instance part="LOGO5" gate="G$1" x="210.312" y="27.94"/>
 <instance part="TP1" gate="G$1" x="139.7" y="40.64" smashed="yes">
 <attribute name="NAME" x="137.16" y="40.64" size="1.778" layer="95"/>
 <attribute name="VALUE" x="137.16" y="38.1" size="1.778" layer="96"/>
@@ -25127,6 +25127,8 @@ Motor A                   Motor B
 </instance>
 <instance part="GND11" gate="1" x="187.96" y="228.6"/>
 <instance part="GND16" gate="1" x="195.58" y="228.6"/>
+<instance part="FID3" gate="G$1" x="421.64" y="27.94"/>
+<instance part="FID4" gate="G$1" x="426.72" y="27.94"/>
 </instances>
 <busses>
 </busses>
