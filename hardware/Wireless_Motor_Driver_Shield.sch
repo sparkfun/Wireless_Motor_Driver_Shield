@@ -24912,6 +24912,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="FID3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2" value="FIDUCIAL1X2"/>
 <part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2" value="FIDUCIAL1X2"/>
+<part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25129,6 +25130,7 @@ Motor A                   Motor B
 <instance part="GND16" gate="1" x="195.58" y="228.6"/>
 <instance part="FID3" gate="G$1" x="421.64" y="27.94"/>
 <instance part="FID4" gate="G$1" x="426.72" y="27.94"/>
+<instance part="GND17" gate="1" x="149.86" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -25318,8 +25320,9 @@ Motor A                   Motor B
 </segment>
 <segment>
 <pinref part="TP9" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="30.48" x2="160.02" y2="30.48" width="0.1524" layer="91"/>
-<label x="160.02" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="165.1" y1="30.48" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="30.48" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
