@@ -8,18 +8,18 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -220,7 +220,7 @@
 <text x="40.259" y="12.827" size="0.8128" layer="21" font="vector" ratio="15" align="center-right">GND</text>
 <text x="40.259" y="10.287" size="0.8128" layer="21" font="vector" ratio="15" align="center-right">PWR</text>
 <text x="40.259" y="7.747" size="0.8128" layer="21" font="vector" ratio="15" align="center-right">SIG</text>
-<text x="6.096" y="0.508" size="1.27" layer="16" font="vector" ratio="15" rot="SMR0">v13</text>
+<text x="6.096" y="0.508" size="1.27" layer="16" font="vector" ratio="15" rot="SMR0">v14</text>
 <text x="27.94" y="-10.16" size="1.778" layer="51" font="vector" ratio="10">B. Huang</text>
 <text x="12.7" y="49.657" size="0.8128" layer="21" ratio="15" rot="R270" align="center-left">SDA</text>
 <text x="10.16" y="49.657" size="0.8128" layer="21" ratio="15" rot="R270" align="center-left">SCL</text>
@@ -262,7 +262,7 @@ Driver Shield</text>
 <wire x1="51.054" y1="31.75" x2="48.514" y2="31.75" width="0.2032" layer="21"/>
 <wire x1="48.514" y1="31.75" x2="48.514" y2="21.59" width="0.2032" layer="21"/>
 <wire x1="48.514" y1="21.59" x2="51.054" y2="21.59" width="0.2032" layer="21"/>
-<text x="32.385" y="22.8219" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">VIN</text>
+<text x="32.639" y="22.8219" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">VMOTOR</text>
 <text x="32.385" y="30.5054" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="top-center">IOREF</text>
 <dimension x1="59.69" y1="0" x2="55.88" y2="53.34" x3="67.31" y3="26.67" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
 <dimension x1="0" y1="53.34" x2="57.15" y2="50.8" x3="28.575" y3="59.69" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
@@ -324,7 +324,7 @@ VIN: 15V</text>
 <text x="32.385" y="12.6619" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">VS</text>
 <text x="5.08" y="50.165" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">Max 
 VS: 15V</text>
-<text x="28.194" y="14.986" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">Power Input Select</text>
+<text x="28.194" y="14.986" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">VMOTOR Input Select</text>
 <text x="0.635" y="24.13" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180" align="center-left">3.3V</text>
 <text x="0.635" y="26.67" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180" align="center-left">GND</text>
 <text x="0.635" y="21.59" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180" align="center-left">SDA</text>
