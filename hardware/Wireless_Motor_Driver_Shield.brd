@@ -313,7 +313,7 @@ Driver Shield</text>
 <text x="21.59" y="3.9116" size="0.8128" layer="21" ratio="15" rot="R90" align="center-left">IOREF</text>
 <text x="21.59" y="4.064" size="1.016" layer="22" ratio="15" rot="SMR270" align="center-right">IOREF</text>
 <text x="7.62" y="-13.208" size="1.778" layer="51" font="vector" ratio="10">Revised by: Shawn Hymel</text>
-<text x="28.067" y="28.194" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">Power Rail Select</text>
+<text x="28.448" y="26.67" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">Power Rail</text>
 <text x="18.796" y="29.337" size="0.8128" layer="21" font="vector" ratio="15" align="center-right">XBee Serial
 Select</text>
 <rectangle x1="41.1226" y1="22.8854" x2="41.3512" y2="23.1394" layer="41"/>
@@ -324,7 +324,7 @@ VIN: 15V</text>
 <text x="32.385" y="12.6619" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">VS</text>
 <text x="5.08" y="50.165" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">Max 
 VS: 15V</text>
-<text x="28.194" y="14.986" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">VMOTOR Input Select</text>
+<text x="28.448" y="16.51" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">Motor Power</text>
 <text x="0.635" y="24.13" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180" align="center-left">3.3V</text>
 <text x="0.635" y="26.67" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180" align="center-left">GND</text>
 <text x="0.635" y="21.59" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180" align="center-left">SDA</text>
@@ -332,6 +332,21 @@ VS: 15V</text>
 <text x="0.508" y="31.75" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center">-</text>
 <text x="0.508" y="34.29" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center">+</text>
 <text x="1.143" y="29.718" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="top-center">VS</text>
+<wire x1="36.068" y1="16.51" x2="37.592" y2="16.51" width="0.254" layer="21"/>
+<wire x1="37.592" y1="16.51" x2="37.592" y2="22.352" width="0.254" layer="21"/>
+<wire x1="37.592" y1="22.352" x2="37.592" y2="26.67" width="0.254" layer="21"/>
+<wire x1="34.925" y1="32.258" x2="34.925" y2="36.068" width="0.254" layer="21"/>
+<wire x1="34.925" y1="36.068" x2="34.417" y2="35.56" width="0.254" layer="21"/>
+<wire x1="34.925" y1="36.068" x2="35.433" y2="35.56" width="0.254" layer="21"/>
+<wire x1="37.592" y1="26.67" x2="38.608" y2="26.67" width="0.254" layer="21"/>
+<wire x1="38.608" y1="26.67" x2="38.1" y2="27.178" width="0.254" layer="21"/>
+<wire x1="38.608" y1="26.67" x2="38.1" y2="26.162" width="0.254" layer="21"/>
+<wire x1="37.592" y1="22.352" x2="35.052" y2="22.352" width="0.254" layer="21"/>
+<wire x1="35.052" y1="22.352" x2="35.56" y2="22.86" width="0.254" layer="21"/>
+<wire x1="35.052" y1="22.352" x2="35.56" y2="21.844" width="0.254" layer="21"/>
+<wire x1="36.068" y1="26.67" x2="36.83" y2="26.67" width="0.254" layer="21"/>
+<wire x1="36.83" y1="26.67" x2="36.83" y2="32.258" width="0.254" layer="21"/>
+<wire x1="36.83" y1="32.258" x2="34.925" y2="32.258" width="0.254" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
