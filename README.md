@@ -1,5 +1,5 @@
-SparkFun Ludus ProtoShield Wireless
-====================================
+SparkFun Wireless Motor Driver Shield
+=====================================
 
 ![SparkFun Wireless Motor Driver Shield](https://cdn.sparkfun.com//assets/parts/1/2/2/4/3/14285-01.jpg)
 
